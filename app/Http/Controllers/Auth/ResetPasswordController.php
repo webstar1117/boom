@@ -55,24 +55,24 @@ class ResetPasswordController extends Controller
                     'otp' => $otp
                 ]);
                 $this->sendEmail($email, $otp);
-                return redirect('/reset-password/email/verify/'.$user->id);
+                return redirect('/reset-password/email/verify/' . $user->id);
             } else {
                 return redirect('/auth-login/reset')->with('error', 'There is no registered email!');
             }
         }
     }
-    function emailVerify($id){
-        if($id){
-            $email=User::whereId($id)->first()->email;
-            dd($email);
-            if($email){
-                return view('email-verify',[
-                    'email'=>$email
+    function emailVerify($id)
+    {
+        if ($id && User::whereId($id)->exists()) {
+            $email = User::whereId($id)->first()->email;
+            if ($email) {
+                return view('email-verify', [
+                    'email' => $email
                 ]);
-            }else{
+            } else {
                 return view('pages-404');
             }
-        }else{
+        } else {
             return view('pages-404');
         }
     }
