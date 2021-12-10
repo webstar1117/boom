@@ -19,7 +19,7 @@
                         </div>
                         <div class="row social-sign-in-gap">
                             <div class="col-md-6 col-xs-12 text-center">
-                                <a class="mr-5" href="{{ url('google/redirect') }}">
+                                <a href="{{ url('google/redirect') }}">
                                     <button class="btn btn-danger">
                                         <i class="fab fa-google mr-2"></i>
                                         Sign in with Google

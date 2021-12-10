@@ -1,5 +1,5 @@
 
-<link href="{{ URL::asset('/assets/new-design/css/bootstrap.min.css') }}" rel="stylesheet" type="text/css" />
+<link href="{{ URL::asset('/assets/css/bootstrap.min.css') }}" rel="stylesheet" type="text/css" />
 <link href="{{ URL::asset('/assets/new-design/css/common.css') }}" rel="stylesheet" type="text/css" />
 <link href="{{ URL::asset('/assets/new-design/css/index.css') }}" rel="stylesheet" type="text/css" />
 <link href="{{ URL::asset('/assets/new-design/css/about-us.css') }}" rel="stylesheet" type="text/css" />

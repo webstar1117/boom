@@ -63,13 +63,14 @@
                                             <input type="password" class="form-control" name="password_confirmation"
                                                 id="verify_password" placeholder="Enter Verify Password" required>
                                         </div>
+                                        <p id="match_password" class="text-danger">Password is not matched!</p>
                                         <div class="form-group">
                                             <label for="code">Verification Code</label>
                                             <input type="text" name="verify_number" class="form-control"
                                                 placeholder="Enter verification code">
                                         </div>
 
-                                        <div class="form-group row mb-0">
+                                        <div class="form-group row mb-0 mt-2 text-center">
                                             <div class="col-12 text-right">
                                                 <button class="btn btn-primary w-md waves-effect waves-light"
                                                     type="submit">Confirm</button>
