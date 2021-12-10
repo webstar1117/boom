@@ -1,0 +1,27 @@
+
+
+.story-text-wrapper {
+    background: #616A6A;
+    border-radius: 5px;
+    padding: 20px;
+}
+.learn-more-btn{
+    margin: 30px auto;
+}
+
+.story-text-wrapper p {
+    font-weight: bold;
+    font-size: 22px;
+    color: #FFFFFF;
+}
+.heading2{
+    text-align: left;
+}
+@media screen and (max-width:767px) {
+    .story-text-wrapper p {
+        font-size: 18px;
+    }   
+    .learn-more-btn{
+        font-size: 14px;
+    }
+}

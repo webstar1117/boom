@@ -1,0 +1,65 @@
+.temp {
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 17.19%, rgba(0, 0, 0, 0) 100%),
+        url(../../images/themes/header/sunset.png);
+}
+
+.temp-main-content {
+    background: linear-gradient(180deg, #dac6ae 0%, rgba(185, 172, 153, 0) 100%);
+}
+
+.temp.input-area-wrapper {
+    background: #5e5d5c;
+    border-radius: 5px;
+    padding: 20px 50px 50px;
+}
+
+.temp.invite-now-area,
+.temp.add-photos-area {
+    background: #5e5d5c;
+}
+
+.temp2-main-bg {
+    background: linear-gradient(180deg, #3E6163 0%, rgba(116, 156, 159, 0.828125) 85.94%, rgba(93, 130, 138, 0) 100%);
+}
+
+.temp2-2nd-bg {
+    background: #747E7E;
+    color: #fff;
+}
+
+.temp2-3rd-bg {
+    background: #c8c8c8;
+}
+
+.temp2.progress .progress-bar {
+    background: #747E7E;
+
+}
+
+.temp.nav-tabs {
+    background-color: #747E7E;
+    border: 2px solid #888888;
+}
+
+.temp.progress .progress-bar {
+    background: #747E7E;
+
+}
+
+@media screen and (max-width: 767px) {
+    .temp.input-area-wrapper {
+        padding: 20px 10px 50px;
+    }
+}
+
+@media screen and (max-width: 1199px) {
+}
+
+@media screen and (max-width: 1199px) {
+}
+
+@media screen and (max-width: 1199px) {
+}
+.user-temp.memorial-description {
+    background: #5E5D5C;
+}

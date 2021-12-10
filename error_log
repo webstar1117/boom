@@ -1,0 +1,6 @@
+[23-Feb-2021 03:25:01 UTC] PHP Warning:  require_once(/home/freefiregame/public_html/bootstrap/app.php): failed to open stream: No such file or directory in /home/freefiregame/public_html/artisan on line 19
+[23-Feb-2021 03:25:01 UTC] PHP Fatal error:  require_once(): Failed opening required '/home/freefiregame/public_html/bootstrap/app.php' (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home/freefiregame/public_html/artisan on line 19
+[23-Feb-2021 03:26:01 UTC] PHP Fatal error:  Uncaught Error: Call to a member function make() on int in /home/freefiregame/public_html/artisan:32
+Stack trace:
+#0 {main}
+  thrown in /home/freefiregame/public_html/artisan on line 32

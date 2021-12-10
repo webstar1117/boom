@@ -1,0 +1,186 @@
+body {
+    background: #B9BDBD;
+}
+
+
+/*==============
+plan & features area
+ ========================= */
+
+.plan-area-wrapper {
+    padding: 30px 50px;
+    background: #747E7E;
+    margin-top: 20px;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.heading2 {
+    text-align: left;
+}
+
+.plan-area-wrapper h4 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 22px;
+    color: #FFFFFF;
+    margin-left: -25px;
+    margin-bottom: 30px;
+}
+
+.plans {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.plans .single-plan {
+    background: #fff;
+    border-radius: 5px;
+    color: #000;
+    padding: 15px;
+    text-align: center;
+    width: 280px;
+    margin-bottom: 20px;
+    box-shadow: 4px 4px 6px #00000040;
+}
+
+.single-plan h5 {
+    color: #747E7E;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: "Montserrat", sans-serif;
+}
+
+.single-plan p {
+    margin-bottom: 0;
+}
+
+.single-plan .price {
+    color: #747E7E;
+    font-weight: 700;
+    font-size: 26px;
+    margin-bottom: 0px;
+}
+
+.single-plan .price span {
+    font-size: 18px;
+}
+
+.single-plan .select-btn {
+    background: #747E7E;
+    color: #FFFFFF;
+    margin-top: 20px;
+}
+
+.single-plan .value {
+    margin-top: 20px;
+    font-weight: 700;
+    color: #747E7E;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.single-plan .services {
+    padding-left: 0;
+    text-align: left;
+    margin: 20px 0px;
+}
+
+.single-plan .services li {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.single-plan .services li i {
+    color: #338d70;
+    margin-right: 8px;
+    font-size: 18px;
+}
+
+
+.plans .single-plan:nth-child(2) p {
+    color: #4686c9;
+}
+
+.plans .single-plan:nth-child(2) .select-btn {
+    background: #4686c9;
+}
+
+.plans .single-plan:nth-child(3) p {
+    color: #485fc4;
+}
+
+.plans .single-plan:nth-child(3) .select-btn {
+    background: #485fc4;
+}
+
+.plans .single-plan:nth-child(4) p {
+    color: #c45955;
+}
+
+.plans .single-plan:nth-child(4) .select-btn {
+    background: #c45955;
+}
+
+
+.learn-more-btn {
+    background: #414645;
+    box-shadow: 0px 5px 6px rgba(0, 0, 0, 0.3);
+    border-radius: 50px;
+    font-weight: bold;
+    font-size: 18px;
+    text-decoration-line: underline;
+    padding: 10px 20px;
+    text-align: center;
+    color: #FFFFFF;
+    display: block;
+    width: 400px;
+    margin: 25px auto;
+}
+
+/*============================
+ responsive css area
+==============================*/
+@media screen and (max-width:991px) {
+    .banner-content h2 {
+        font-size: 38px;
+    }
+
+    .banner-content p {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .banner-content {
+        padding: 100px 0px;
+    }
+
+    .banner-content img {
+        width: 300px;
+    }
+
+    .heading2 {
+        font-size: 34px;
+    }
+
+    .plan-area-wrapper h4 {
+        font-size: 20px;
+    }
+
+    .learn-more-btn {
+        font-size: 16px;
+        width: 100%;
+        padding: 5px 10px;
+    }
+
+    .plans .single-plan {
+        max-width: 350px;
+        width: 100%;
+    }
+
+    .plan-area-wrapper {
+        padding: 30px 25px;
+    }
+}

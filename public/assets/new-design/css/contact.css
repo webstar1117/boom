@@ -1,0 +1,224 @@
+/*============================
+conatct area
+==============================*/
+.contact-area-wrapper {
+    background: #e7e7e7;
+    color: #000;
+    padding: 50px;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 20px;
+}
+
+.heading2 {
+    text-align: left;
+}
+
+.email-us {
+    color: #000;
+    background: #d5d5d5;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.email-us p {
+    margin-bottom: 0;
+
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.email-us p a {
+    color: rgb(107, 107, 107);
+    text-decoration: underline;
+}
+
+.input-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.input-wrapper label {
+    display: block;
+    margin: 0px 20px 30px auto;
+}
+
+.input-wrapper label p {
+    font-size: 10px;
+    margin-bottom: 0;
+}
+
+.input-wrapper input,
+.input-wrapper textarea,
+.input-wrapper select {
+    width: 500px;
+    height: 40px;
+}
+
+.input-wrapper textarea {
+    height: inherit;
+    margin-top: 20px !important;
+}
+
+.input-wrapper select {
+    padding: 5px;
+    outline: none;
+    border: 1px solid #ced4da;
+    padding: .375rem .75rem;
+    border-radius: .25rem;
+}
+
+button.btn.submit-btn {
+    display: block;
+    margin-left: auto;
+    background: #2f2f2f;
+    color: #fff;
+    margin-top: 20px;
+}
+
+
+
+.affiliate-area,
+.address-area {
+    background: #d4d4d4;
+    padding: 15px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+.affiliate-area h4,
+.address-area h4 {
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.affiliate-area p,
+.address-area p {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.affiliate-area a,
+.address-area a {
+    font-size: 14px;
+    font-weight: 400;
+    color: rgb(107, 107, 107);
+    text-decoration: underline;
+}
+
+.address-area address {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.learn-more-btn {
+    font-size: 16px;
+    padding: 5px 20px;
+}
+
+
+/*==========
+ responsive area
+ =========== */
+
+
+@media screen and (max-width:1199px) {
+
+    .input-wrapper input,
+    .input-wrapper textarea,
+    .input-wrapper select {
+        width: 400px;
+    }
+}
+
+@media screen and (max-width:992px) {
+    .banner-content h2 {
+        font-size: 38px;
+    }
+
+    .banner-content img {
+        width: 300px;
+    }
+
+    .banner-content p {
+        font-size: 18px;
+    }
+
+    .banner-content {
+        padding: 130px 0px;
+    }
+
+    .heading2 {
+        margin: 15px 0px;
+    }
+
+    button.btn.submit-btn {
+        margin: 20px 10px 20px auto;
+    }
+
+    .input-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .input-wrapper label {
+        display: block;
+        margin: 20px 0px 5px;
+    }
+
+    .input-wrapper input,
+    .input-wrapper textarea,
+    .input-wrapper select {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .banner-content h2 {
+        font-size: 32px;
+    }
+
+    .banner-content img {
+        width: 230px;
+    }
+
+    .banner-content p {
+        font-size: 16px;
+    }
+
+    .heading2 {
+        font-size: 32px;
+    }
+
+    .contact-area-wrapper {
+        padding: 30px;
+    }
+
+    .email-us p {
+        font-size: 16px;
+        font-weight: 400;
+    }
+}
+
+@media screen and (max-width:450px) {
+    .banner-content h2 {
+        font-size: 22px;
+    }
+    .contact-area-wrapper {
+        padding: 15px;
+    }
+
+    .banner-content {
+        padding: 80px 0px;
+    }
+    .banner-content img {
+        width: 200px;
+    }
+    .banner-content p {
+        font-size: 14px;
+    }
+    .learn-more-btn {
+        width: 100%;
+    }
+}
