@@ -91,7 +91,7 @@ class ResetPasswordController extends Controller
             $password = $request->input('password');
             if (User::where('email', $email)->exists()) {
                 $otp = User::where('email', $email)->first()->otp;
-                // dd($otp);
+                dd($otp);
                 if ($otp == $verify_number) {
                     User::where('email', $email)->update([
                         'password' => Hash::make($password),
