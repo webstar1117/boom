@@ -57,7 +57,7 @@ class LoginController extends Controller
             return redirect()->back()->withErrors($validator->errors());
         }  
         if (!Auth::attempt(['email' => $request->email, 'password' => $request->password])) {
-            return redirect()->back()->with('error', 'Please register first!');
+            return redirect()->back()->with('error', 'Invalid User!');
         }
         return redirect('/');
     }
