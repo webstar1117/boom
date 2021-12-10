@@ -64,6 +64,7 @@ class ResetPasswordController extends Controller
     function emailVerify($id){
         if($id){
             $email=User::whereId($id)->first()->email;
+            dd($email);
             if($email){
                 return view('email-verify',[
                     'email'=>$email
