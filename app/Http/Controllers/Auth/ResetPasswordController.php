@@ -69,7 +69,7 @@ class ResetPasswordController extends Controller
                     'email'=>$email
                 ]);
             }else{
-                return redirect()->back()->with('error', 'There is no registered email!');
+                return view('pages-404');
             }
         }else{
             return view('pages-404');
