@@ -45,13 +45,10 @@
                                 </div>
 
                                 <div class="p-2">
-                                    <div class="alert alert-success text-center mb-4" role="alert">
-                                        Enter your Email and instructions will be sent to you!
-                                    </div>
                                     <form class="form-horizontal" method="post" action="/reset-password/email/confirm">
                                         {{ csrf_field() }}
                                         <input type="email" class="form-control" name="email"
-                                            value="{{ Session::get('email') }}" hidden>
+                                            value="{{$email}}" hidden>
                                         <div class="form-group">
                                             <label for="password">Password<span class="text-danger">*</span></label>
                                             <input type="password" class="form-control" name="password" id="password"

@@ -48,17 +48,31 @@ class ResetPasswordController extends Controller
             return back()->withErrors($validator->errors());
         } else {
             $email = $request->input('email');
-            $exist = User::where('email', $email)->first();
-            if ($exist) {
+            $user = User::where('email', $email)->first();
+            if ($user) {
                 $otp = rand(100000, 999999);
                 User::where('email', $email)->update([
                     'otp' => $otp
                 ]);
                 $this->sendEmail($email, $otp);
-                return redirect()->route('email-verify')->with('email', $email);
+                return redirect('/email-verify/'.$user->id);
             } else {
                 return redirect()->back()->with('error', 'There is no registered email!');
             }
+        }
+    }
+    function emailVerify($id){
+        if($id){
+            $email=User::where($id)->first()->email;
+            if($email){
+                return view('email-verify',[
+                    'email'=>$email
+                ]);
+            }else{
+                return redirect()->back()->with('error', 'There is no registered email!');
+            }
+        }else{
+            return view('pages-404');
         }
     }
     function verifyNumber(Request $request)

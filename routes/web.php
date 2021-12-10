@@ -37,9 +37,7 @@ Route::get('/auth-login/reset', function () {
     return view('auth-recoverpw');
 });
 Route::post('/reset-password/email', 'Auth\ResetPasswordController@sendNumber');
-Route::get('/reset-password/email-confirm', function () {
-    return view('email-verify');
-})->name('email-verify');
+Route::get('/email-verify/{id}','Auth\ResetPasswordController@emailVerify' );
 Route::post('/reset-password/email/confirm', 'Auth\ResetPasswordController@verifyNumber');
 
 
