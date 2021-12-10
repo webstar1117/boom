@@ -56,7 +56,9 @@
 
                       @else
                           <a class="nav-link sign-in-btn" href="{{ url('auth-login') }}">
+                              <button type="button" class="btn btn-secondary">
                               SIGN IN
+                              </button>
                           </a>
                       @endif
                   </li>
