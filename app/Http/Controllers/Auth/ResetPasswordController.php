@@ -55,7 +55,7 @@ class ResetPasswordController extends Controller
                     'otp' => $otp
                 ]);
                 $this->sendEmail($email, $otp);
-                return redirect('/email-verify/'.$user->id);
+                return redirect('/reset-password/email/verify/'.$user->id);
             } else {
                 return redirect()->back()->with('error', 'There is no registered email!');
             }

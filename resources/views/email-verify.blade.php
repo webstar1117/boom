@@ -58,7 +58,7 @@
                                             <label for="verify_password">Verify Password<span
                                                     class="text-danger">*</span></label>
                                             <input type="password" class="form-control" name="password_confirmation"
-                                                id="verify_password" placeholder="Enter Verify Password" required>
+                                                id="password_confirmation" placeholder="Enter Verify Password" required>
                                         </div>
                                         <p id="match_password" class="text-danger">Password is not matched!</p>
                                         <div class="form-group">
@@ -97,4 +97,23 @@
     @endsection
     @section('script')
     @include('common.toastr')
+    <script>
+        $(document).ready(function() {
+            $("#match_password").hide();
+            $('#password').keyup(function() {
+                MatchPassword();
+            })
+            $('#password_confirmation').keyup(function() {
+                MatchPassword();
+            })
+        })
+
+        function MatchPassword() {
+            if ($('#password').val() != $('#password_confirmation').val()) {
+                $("#match_password").show();
+            } else {
+                $("#match_password").hide();
+            }
+        }
+    </script>
     @endsection
