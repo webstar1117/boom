@@ -47,7 +47,6 @@ login
                                 <div class="form-group">
                                     <label for="userpassword">Password<span class="text-danger">*</span></label>
                                     <input type="password" class="form-control" name="password" id="password-field" placeholder="Enter password" required>
-                                    <span style="color:black;padding-right:23px" toggle="#password-field" class="fa fa-fw fa-eye field-icon toggle-password"></span>
                                 </div>
                                 <input type="hidden" class="form-control" name="key" value="from_login_page">
                                 <div class="mt-3 text-center">
@@ -83,15 +82,6 @@ login
 @include('common.toastr')
 
 <script>
-    $(".toggle-password").click(function() {
-
-        $(this).toggleClass("fa-eye fa-eye-slash");
-        var input = $($(this).attr("toggle"));
-        if (input.attr("type") == "password") {
-            input.attr("type", "text");
-        } else {
-            input.attr("type", "password");
-        }
-    });
+  
 </script>
 @endsection

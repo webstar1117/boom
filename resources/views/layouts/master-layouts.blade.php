@@ -2,37 +2,45 @@
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8" />
+    <title> @yield('title') | FaithSpace</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@yield('title')| Kifo</title>
+    <meta content="Admin Dashboard for FaithSpace" name="description" />
+    <meta content="Themesbrand" name="author" />
     <!-- App favicon -->
-    <link rel="shortcut icon" href="{{ URL::asset('/assets/images/favicon.ico') }}">
+    <link rel="shortcut icon" href="{{ URL::asset('assets/images/favicon.ico') }}">
     @include('layouts.head')
-    @yield('link')
 </head>
 
 @section('body')
-
-    <body>
-        <span class="display-block-btn"></span>
-    @show
+    <body data-topbar="dark" data-layout="horizontal">
+@show
 
     <!-- Begin page -->
-    <div>
+    <div id="layout-wrapper">
         @include('layouts.top-hor')
-        @yield('content')
-        @include('layouts.footer')
-
+        @include('layouts.hor-menu')
         <!-- ============================================================== -->
         <!-- Start right Content here -->
         <!-- ============================================================== -->
-
+        <div class="main-content">
+            <div class="page-content">
+                <!-- Start content -->
+                <div class="container-fluid">
+                    @yield('content')
+                </div> <!-- content -->
+            </div>
+            @include('layouts.footer')
+        </div>
         <!-- ============================================================== -->
         <!-- End Right content here -->
         <!-- ============================================================== -->
     </div>
     <!-- END wrapper -->
+
+    <!-- Right Sidebar -->
+    @include('layouts.right-sidebar')
+    <!-- END Right Sidebar -->
 
     @include('layouts.footer-script')
 </body>

@@ -110,7 +110,7 @@ class ResetPasswordController extends Controller
     {
         Mail::raw('verification code: ' . $otp, function ($message) use ($email) {
             $message->to($email)->subject("Check verification code");
-            $message->from(env('MAIL_USERNAME'), 'kifo.org');
+            $message->from(env('MAIL_USERNAME'), 'code');
         });
     }
 }
