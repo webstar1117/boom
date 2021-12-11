@@ -24,6 +24,8 @@ Route::get('/auth-register', function () {
     return view('auth-register', ['smart_captcha' => $smart_captcha]);
 })->name('auth-register');
 Route::post('/auth-register', 'Auth\RegisterController@create');
+Route::post('/auth-register/send-otp', 'Auth\RegisterController@sendOTP');
+
 Route::post('/auth-register/send-number', 'Auth\RegisterController@sendNumber');
 
 Route::post('/auth-register/verify-number', 'Auth\RegisterController@verifyNumber');
